@@ -1,4 +1,4 @@
-package com.example.rough;
+package com.shetisakha;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +34,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.widget.ToggleButton;
 
-import com.example.rough.databases.DatabaseHelper;
+import com.shetisakha.databases.DatabaseHelper;
 
 public class MainActivity4 extends AppCompatActivity{// implements CompoundButton.OnCheckedChangeListener {
 

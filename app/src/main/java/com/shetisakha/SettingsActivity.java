@@ -1,4 +1,4 @@
-package com.example.rough;
+package com.shetisakha;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,8 +12,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 
-import com.example.rough.classes.PathDrawView;
-import com.example.rough.classes.SettingsFragment;
+import com.shetisakha.classes.PathDrawView;
+import com.shetisakha.classes.SettingsFragment;
 
 public class SettingsActivity extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;

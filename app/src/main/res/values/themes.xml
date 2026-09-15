@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Rough" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ShetiSakha" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/lavender</item>
     </style>
 
-    <style name="Theme.Rough" parent="Base.Theme.Rough" />
+    <style name="Theme.ShetiSakha" parent="Base.Theme.ShetiSakha" />
 </resources>

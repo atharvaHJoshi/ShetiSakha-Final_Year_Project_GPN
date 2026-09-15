@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.rough"
+    namespace = "com.shetisakha"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.rough"
+        applicationId = "com.shetisakha"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

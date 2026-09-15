@@ -1,4 +1,4 @@
-package com.example.rough;
+package com.shetisakha;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -27,8 +27,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.example.rough.classes.GridViewAdapter;
-import com.example.rough.classes.PatternLockView;
+import com.shetisakha.classes.GridViewAdapter;
+import com.shetisakha.classes.PatternLockView;
 
 import java.io.IOException;
 import java.io.OutputStream;

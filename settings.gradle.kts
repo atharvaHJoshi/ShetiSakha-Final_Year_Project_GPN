@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "rough"
-include("app", "core")
+rootProject.name = "ShetiSakha"
+include("app")
  

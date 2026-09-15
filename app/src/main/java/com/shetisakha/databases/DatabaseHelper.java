@@ -1,4 +1,4 @@
-package com.example.rough.databases;
+package com.shetisakha.databases;
 
 import android.content.Context;
 import android.database.Cursor;

@@ -28,7 +28,7 @@
         android:paddingTop="16dp"
         android:layout_below="@+id/btDevices_draw">
 
-        <com.example.rough.classes.PathDrawView
+        <com.shetisakha.classes.PathDrawView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

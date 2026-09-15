@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ShetiSakha</string>
-    <string name="open_nav">Open rough</string>
-    <string name="close_nav">Close rough</string>
+    <string name="open_nav">Open ShetiSakha</string>
+    <string name="close_nav">Close ShetiSakha</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

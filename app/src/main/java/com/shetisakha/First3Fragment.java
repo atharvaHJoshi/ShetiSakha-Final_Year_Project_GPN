@@ -1,4 +1,4 @@
-package com.example.rough;
+package com.shetisakha;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.rough.databinding.FragmentSecond2Binding;
+import com.shetisakha.databinding.FragmentFirst3Binding;
 
-public class Second2Fragment extends Fragment {
+public class First3Fragment extends Fragment {
 
-    private FragmentSecond2Binding binding;
+    private FragmentFirst3Binding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class Second2Fragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecond2Binding.inflate(inflater, container, false);
+        binding = FragmentFirst3Binding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,11 +29,11 @@ public class Second2Fragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(Second2Fragment.this)
-                        .navigate(R.id.action_Second2Fragment_to_First2Fragment);
+                NavHostFragment.findNavController(First3Fragment.this)
+                        .navigate(R.id.action_First3Fragment_to_Second3Fragment);
             }
         });
     }

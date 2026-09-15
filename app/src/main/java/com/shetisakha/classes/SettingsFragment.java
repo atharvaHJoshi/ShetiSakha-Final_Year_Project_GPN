@@ -1,9 +1,9 @@
-package com.example.rough.classes;
+package com.shetisakha.classes;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-import com.example.rough.R;
+import com.shetisakha.R;
 
 public class SettingsFragment extends PreferenceFragment {
 

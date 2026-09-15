@@ -1,4 +1,4 @@
-package com.example.rough;
+package com.shetisakha;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -21,7 +21,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.rough.classes.PathDrawView;
+import com.shetisakha.classes.PathDrawView;
 
 import java.io.IOException;
 import java.io.OutputStream;
