@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="User Manual"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="15dp"
+        android:text="- Directions to use"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="322dp"
+        android:layout_height="502dp"
+        android:layout_below="@+id/textView3"
+
+        android:text="• Weather - to get weather details enter city in search bar and click search icon \n
+\n• Remote mode – drive agribot manually via virtual remote, give directions according to arrow buttons shown.\n
+\n• Connect to Bluetooth - enable Bluetooth permission and connect to bot using Connect to Bluetooth button.\n
+\n• Operations - Turn on / off operations such as seeding, sowing, sprinkling via toggle buttons.\n
+\n• Path memorizing - To use this click on start and then give input directions via remote such as left, right, forward, backward and stop. This will record path. Now click on play to repeat the same path.\n
+\n• Automatic mode - connect to Bluetooth using connect button, draw path carefully and then click on send to provide path to agribot to follow
+
+
+
+"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13498239320",
+    "project_id": "rough-74332",
+    "storage_bucket": "rough-74332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13498239320:android:a7b02fa6c56b321c2afd2d",
+        "android_client_info": {
+          "package_name": "com.example.rough"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZJryHgqiLli9__d1eLZNtBeqU_gwa91k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

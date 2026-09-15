@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".draw_shape">
+
+    <TextView
+        android:id="@+id/btDevices_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="beginning"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/btDevices_draw">
+
+        <com.example.rough.classes.PathDrawView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:id="@+id/canvas"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:measureWithLargestChild="true">
+
+                <LinearLayout android:id="@+id/leftSpacer"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/connectToDevice_draw"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Connect"
+                    android:layout_gravity="left"
+                    android:maxLines="2"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <View
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="2px"
+                    android:background="#90909090"/>
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Send"
+                    android:maxLines="2"
+                    android:filterTouchesWhenObscured="true"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <View
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="2px"
+                    android:background="#90909090"/>
+
+                <Button
+                    android:id="@+id/settingsButton"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:onClick="onClick"
+                    android:nestedScrollingEnabled="true"
+                    android:maxLines="2"
+                    android:layout_gravity="right"
+                    style="?android:attr/buttonBarButtonStyle"/>
+
+                <LinearLayout android:id="@+id/rightSpacer"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

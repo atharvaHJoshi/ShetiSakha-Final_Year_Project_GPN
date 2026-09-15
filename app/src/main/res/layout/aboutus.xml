@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="195dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="90dp"
+        android:text="About us"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="352dp"
+        android:layout_height="497dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="ShetiSakha is the initiative of the students of Government Polytechnic Nagpur to help the farmers to plough, seed and irrigate the field without manual load.\n\n By using the system, the farmers can remotely control the machine via an app. The model will automate the lanes and traverse through the farm without any hustle. The idea of automated agricultural machines originates from the need to enhance efficiency, reduce labor, and meet the growing demands of modern farming practices."
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>

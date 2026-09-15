@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/connectToDevice"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="610dp"
+        android:backgroundTint="@color/green"
+        android:text="Connect to Bluetooth"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drive Manually"
+            android:textSize="21sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <!--
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@id/btnPlough"
+        android:background="#E7F6EC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-56dp"
+        app:srcCompat="@drawable/plants" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="-56dp"
+        android:layout_alignTop="@id/btnPlough"
+        app:srcCompat="@drawable/plow"
+        android:layout_centerHorizontal="true"
+        android:background="#E7F6EC" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/seed"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-56dp"
+        android:layout_alignTop="@id/btnSow"
+        android:layout_marginRight="7dp"
+        android:background="#E7F6EC" />
+
+    <ToggleButton
+        android:id="@+id/btnSprinkle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/white"
+        android:textColor="@color/green"
+        android:textOff="Sprinkle \nOFF"
+        android:textOn="sprinkle \nON"
+        android:onClick="onCheckedChanged"/>
+
+    <!-- Button for UP-->
+    <ToggleButton
+        android:id="@+id/btnPlough"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onCheckedChanged"
+        android:textColor="@color/green"
+        android:textOff="PLOUGH Up\n OFF"
+        android:textOn="Plough Up\n ON" />
+
+    <ToggleButton
+        android:id="@+id/btnPloughDown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/white"
+        android:onClick="onCheckedChanged"
+        android:textColor="@color/green"
+        android:textOff="PLOUGH Down \n OFF"
+        android:textOn="Plough \n ON" />
+
+    <ToggleButton
+        android:id="@+id/btnSow"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textOff="SOW\n OFF"
+        android:textOn="SOW \nON"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:onClick="onCheckedChanged"/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rl_Main"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSow"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="114dp">
+
+        <ImageButton
+            android:id="@+id/top"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="#E7F6EC"
+            android:src="@drawable/baseline_arrow_up" />
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="#E7F6EC"
+            android:src="@drawable/baseline_arrow_left" />
+
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#E7F6EC"
+            android:src="@drawable/baseline_arrow_right" />
+
+        <Button
+            android:id="@+id/btn_ON_OFF"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8A8A8A"
+            android:text="OFF" />
+
+        <ImageButton
+            android:id="@+id/bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btn_ON_OFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#E7F6EC"
+            android:src="@drawable/baseline_arrow_down" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="11dp"
+        android:background="@color/green"
+        android:contentDescription="img"
+        android:onClick="openhome"
+        app:srcCompat="@drawable/home_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_label_important_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btDevices"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="105dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <!-- Add more buttons or controls for other car functions as needed -->
+
+
+    <Button
+        android:id="@+id/btn_memStart"
+        android:layout_width="103dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:layout_alignParentBottom="true"
+        android:text="Start"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_memStop"
+        android:layout_width="107dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:layout_alignParentBottom="true"
+        android:text="Stop"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_memPlay"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="5dp"
+        android:text="Play"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_Main"/>
+
+</RelativeLayout>

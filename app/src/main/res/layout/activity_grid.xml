@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity_grid">
+
+    <!--    <com.example.rough.classes.LineDrawingView-->
+    <!--        android:id="@+id/lineDrawingView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/green"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:id="@+id/img_RecMem_Start"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:background="#E7F6EC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/plants"
+        android:layout_below="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/img_RecMem_Stop"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/plow"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#E7F6EC"
+        android:layout_below="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/img_RecMem_Play"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/seed"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="#E7F6EC"
+        android:layout_below="@+id/toolbar"/>
+
+    <!--Sprinkling Button -->
+    <ToggleButton
+        android:id="@+id/btn_memStart"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:text="Start"
+        android:layout_below="@+id/img_RecMem_Start"
+        android:onClick="onCheckedChanged"/>
+
+    <!--Ploughing Button -->
+    <ToggleButton
+        android:id="@+id/btn_memStop"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:text="Stop"
+        android:layout_below="@+id/img_RecMem_Stop"
+        android:onClick="onCheckedChanged"/>
+
+    <!-- Seeding Button -->
+    <ToggleButton
+        android:id="@+id/btn_memPlay"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Play"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/green"
+        android:layout_below="@+id/img_RecMem_Play"
+        android:onClick="onCheckedChanged"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/btDevices_Pt_Lock"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="beginning"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/btn_memPlay">
+
+        <com.example.rough.classes.PatternLockView
+            android:outlineAmbientShadowColor="@color/black"
+            android:id="@+id/patternLockView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:background="@color/white"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:measureWithLargestChild="true">
+
+            <LinearLayout android:id="@+id/leftSpacer"
+                android:layout_weight="0.25"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/connectToDevice_grid"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                android:layout_gravity="left"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <!-- background= color white-->
+            <View
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="2px"
+                android:background="@color/white"
+                />
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/cmdRunOnPath"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Send"
+                android:maxLines="2"
+                android:filterTouchesWhenObscured="true"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <LinearLayout android:id="@+id/rightSpacer"
+                android:layout_width="0dip"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
